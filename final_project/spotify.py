@@ -331,10 +331,10 @@ def make_request_with_cache(baseurl, headers={}, error_message="token expired"):
     '''
 
 	if baseurl in CACHE_DICT:
-		# print('using caching')
+		print('using caching')
 		return CACHE_DICT[baseurl]
 	else: 
-		# print('feching')
+		print('feching')
 		api_return = make_request(baseurl, headers, error_message)
 		CACHE_DICT[baseurl] = api_return
 		save_cache(CACHE_DICT)
@@ -718,8 +718,8 @@ def main():
 		track_uri_list.append(element['trackIDuri'])
 	
 
-	playlist_id = create_playlist(user_input, post_headers)
-	add_tracks_to_playlist(post_headers, playlist_id, track_uri_list)
+	# playlist_id = create_playlist(user_input, post_headers)
+	# add_tracks_to_playlist(post_headers, playlist_id, track_uri_list)
 
 	
 	# load_Artist(artist_name_infos)
