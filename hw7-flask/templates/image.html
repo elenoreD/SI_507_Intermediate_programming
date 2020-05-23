@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>About this site</title>
+  <style>
+    table, th, td {
+      border: 1px double black;
+      
+    }
+    </style>
+</head>
+<body>
+    <h1>Hello, {{name}}!</h1>
+    <p>Today's techonology headlines are...</p>
+    
+    <table>
+        <tr>
+          <th>Title</th>
+          <th>Thumbnail</th>
+        </tr>
+        <tr>
+          <td><a href="{{url_list[0]}}">{{title_list[0]}}</a></td>
+          <td><img src="{{pic_list[0]}}" ></td>
+        </tr>
+        <tr>
+        <td><a href="{{url_list[1]}}">{{title_list[1]}}</a></td>
+        <td><img src="{{pic_list[1]}}" ></td>
+        </tr>
+        <tr>
+        <td><a href="{{url_list[2]}}">{{title_list[2]}}</a></td>
+        <td><img src="{{pic_list[2]}}" ></td>
+        </tr>
+        <tr>
+        <td><a href="{{url_list[3]}}">{{title_list[3]}}</a></td>
+        <td><img src="{{pic_list[3]}}" ></td>
+        </tr>
+        <tr>
+        <td><a href="{{url_list[4]}}">{{title_list[4]}}</a></td>
+        <td><img src="{{pic_list[4]}}" ></td>
+        </tr>
+       
+        
+      </table>
+    
+</body>
+</html>
