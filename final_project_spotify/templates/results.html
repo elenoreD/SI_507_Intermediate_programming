@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF8"/>
+    <title>Tracks Results</title>
+    <style>
+        table, th, td {
+          border: 1px double black;
+          
+        }
+    </style>
+</head>
+<body>
+    <h1>Here is your roadtrip mix tape!!</h1>
+    <table>
+        <tr>
+            <th>Top Track Picture</th>
+            <th>Top Track Name</th>
+            <th>Artist Name</th>
+            <th>Artist is from</th>
+            <th>Artist Description</th>
+            <th>Artist Picture</th>
+            <th>Artist Followers</th>
+            <th>Artist Genre</th>
+            <th>Top Track's Album</th>
+            <th>Track's Duration</th>
+        </tr>
+        {% for row in results %}
+        <tr>
+            <td><img src="{{row[9]}}" width="125" height="125"></td>
+            <td>{{row[0]}}</td>
+            <td>{{row[1]}}</td>
+            <td>{{row[2]}}</td>
+            <td>{{row[3]}}</td>
+            <td><img src="{{row[4]}}" ></td>
+            <td>{{row[5]}}</td>
+            <td>{{row[6]}}</td>
+            <td>{{row[7]}}</td>
+            <td>{{row[8]}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
